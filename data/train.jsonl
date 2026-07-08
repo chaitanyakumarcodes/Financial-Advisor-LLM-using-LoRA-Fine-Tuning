@@ -1,0 +1,2 @@
+{"instruction":"Suggest a budget","input":"Income=80000, Goal=Emergency Fund","output":"Allocate 50% needs, 30% savings, 20% wants. Build 6 months emergency fund first."}
+{"instruction":"Risk profile","input":"Age=28, Risk=Moderate","output":"Illustrative allocation: 60% equity, 30% debt, 10% gold."}
