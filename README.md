@@ -250,58 +250,6 @@ Epochs:
 
 ---
 
-# Training Workflow
-
-```mermaid
-sequenceDiagram
-
-participant Dataset
-
-participant Trainer
-
-participant Llama
-
-participant LoRA
-
-Dataset->>Trainer: Load Financial Dataset
-
-Trainer->>Llama: Load Base Model
-
-Trainer->>LoRA: Attach Adapter
-
-Trainer->>Llama: Fine Tune
-
-Llama-->>Trainer: Updated Adapter
-
-Trainer->>Disk: Save Adapter
-```
-
----
-
-# Inference Workflow
-
-```mermaid
-sequenceDiagram
-
-participant User
-
-participant Tokenizer
-
-participant Llama
-
-participant Adapter
-
-User->>Tokenizer: Financial Question
-
-Tokenizer->>Llama: Tokens
-
-Adapter->>Llama: Load LoRA
-
-Llama-->>User: Financial Advice
-```
-
----
-
 # Technologies Used
 
 - Python
@@ -330,33 +278,6 @@ The model can provide guidance on
 
 ---
 
-# Future Improvements
-
-- RAG integration with financial documents
-- Mutual fund recommendation engine
-- SIP calculator
-- EMI calculator
-- Tax planning module
-- Tool Calling
-- Multi-Agent Financial Advisor
-- Voice Assistant
-- FastAPI deployment
-- Docker support
-- Evaluation benchmarks
-- Quantized GGUF model export
-
----
-
 # Disclaimer
 
 This project is intended solely for educational and research purposes. The generated responses are not financial, investment, tax, or legal advice. Users should consult qualified financial professionals before making financial decisions.
-
----
-
-# Author
-
-**Chaitanya Kumar**
-
-B.Tech, IIT Hyderabad
-
-AI • Machine Learning • Large Language Models • FinTech
